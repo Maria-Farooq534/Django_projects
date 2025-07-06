@@ -6,7 +6,13 @@ from django.http import HttpResponse
 def index(request):  #By default, the index function takes an argument named "request"
     # return "Hello, World" 
     #Now I need to return string in HttpResponse instead of blank string.
-    return HttpResponse("Hello, and Welcome")
+    return HttpResponse("""Hello, and Welcome!
+                        <h5>Here you can Check:</h5>
+                        <h6>about</h6>
+                        <h6>profiles</h6>
+                        <h6>services</h6>
+                        
+                        """)
 
 def about(request):
     # return HttpResponse("About my Website")
@@ -21,4 +27,5 @@ def profiles(request):
                         <a href = "https://www.behance.net/mariafarooq5">Behance</a>
                         """)
 
-
+def services(request):
+    return HttpResponse("No Service for now :)")
