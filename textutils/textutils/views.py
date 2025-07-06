@@ -1,1 +1,9 @@
-print(1)
+#I have created this views.py file in textutils project - Maria
+
+#Views responds HTTP request. So, we need to import HTTP
+from django.http import HttpResponse
+
+def index(request):  #By default, the index function takes an argument named "request"
+    # return "Hello, World" 
+    #Now I need to return string in HttpResponse instead of blank string.
+    return HttpResponse("Hello, World")
