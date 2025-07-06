@@ -11,4 +11,14 @@ def index(request):  #By default, the index function takes an argument named "re
 def about(request):
     # return HttpResponse("About my Website")
     #We can use html tags in it
-    return HttpResponse("<h1>About my Website</h1>")
+    return HttpResponse("<h1>About me</h1>")
+
+def profiles(request):
+    return HttpResponse("""
+                        Visit my Profiles:
+                        <a href="https://github.com/Maria-Farooq534">GitHub</a>
+                        <a href = "http://www.linkedin.com/in/maria-farooq-b693b7288">LinkedIn</a>
+                        <a href = "https://www.behance.net/mariafarooq5">Behance</a>
+                        """)
+
+
