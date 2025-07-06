@@ -11,6 +11,7 @@ def index(request):  #By default, the index function takes an argument named "re
                         <h6>about</h6>
                         <h6>profiles</h6>
                         <h6>services</h6>
+                    
                         
                         """)
 
@@ -25,6 +26,7 @@ def profiles(request):
                         <a href="https://github.com/Maria-Farooq534">GitHub</a>
                         <a href = "http://www.linkedin.com/in/maria-farooq-b693b7288">LinkedIn</a>
                         <a href = "https://www.behance.net/mariafarooq5">Behance</a>
+                        <a href = "https://github.com/fahad-maqbool/SEOOnt">SEO Ontology Project</a>
                         """)
 
 def services(request):
