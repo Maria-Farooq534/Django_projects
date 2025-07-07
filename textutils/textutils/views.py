@@ -48,3 +48,27 @@ def news(request):
     return HttpResponse("""This is about News                        
                         <h5><a href = "http://127.0.0.1:8000/">Back To Home</a></h5>
                         """)
+
+def services(request):
+    return HttpResponse("""This page is about services                        
+                        <h5><a href = "http://127.0.0.1:8000/">Back To Home</a></h5>                        
+                        """)
+def profiles(request):
+    return HttpResponse("""
+#                         Visit my Profiles:
+#                         <a href="https://github.com/Maria-Farooq534">GitHub</a>
+#                         <a href = "http://www.linkedin.com/in/maria-farooq-b693b7288">LinkedIn</a>
+#                         <a href = "https://www.behance.net/mariafarooq5">Behance</a>
+#                         <a href = "https://github.com/fahad-maqbool/SEOOnt">SEO Ontology Project</a>
+                        
+                        <h5><a href = "http://127.0.0.1:8000/">Back To Home</a></h5> 
+#                         """)
+
+def contact(request):
+    return HttpResponse("""Conntact Us                        
+                        <h5><a href = "http://127.0.0.1:8000/">Back To Home</a></h5>                        
+                        """)
+def about(request):
+    return HttpResponse("""About Us                        
+                        <h5><a href = "http://127.0.0.1:8000/">Back To Home</a></h5>                        
+                        """)
