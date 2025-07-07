@@ -3,6 +3,8 @@
 #Views responds HTTP request. So, we need to import HTTP
 from django.http import HttpResponse
 
+#Day 1
+
 # def index(request):  #By default, the index function takes an argument named "request"
 #     # return "Hello, World" 
 #     #Now I need to return string in HttpResponse instead of blank string.
@@ -33,15 +35,16 @@ from django.http import HttpResponse
 #     return HttpResponse("No Service for now :)")
 
 
+#Day 2
 
 def index(request):
     return HttpResponse("""Home
                         
-                        <h5><a href = "">News</a></h5>
-                        <h5><a href = "">Services</a></h5>
-                        <h5><a href = "">Profiles</a></h5>
-                        <h5><a href = "">Contaxt</a></h5>
-                        <h5><a href = "">About</a></h5>
+                        <h5><a href = "http://127.0.0.1:8000/news/">News</a></h5>
+                        <h5><a href = "http://127.0.0.1:8000/services/">Services</a></h5>
+                        <h5><a href = "http://127.0.0.1:8000/profiles/">Profiles</a></h5>
+                        <h5><a href = "http://127.0.0.1:8000/contact/">Contact</a></h5>
+                        <h5><a href = "http://127.0.0.1:8000/about/">About</a></h5>
 
                         """)
 def news(request):
@@ -55,14 +58,14 @@ def services(request):
                         """)
 def profiles(request):
     return HttpResponse("""
-#                         Visit my Profiles:
-#                         <a href="https://github.com/Maria-Farooq534">GitHub</a>
-#                         <a href = "http://www.linkedin.com/in/maria-farooq-b693b7288">LinkedIn</a>
-#                         <a href = "https://www.behance.net/mariafarooq5">Behance</a>
-#                         <a href = "https://github.com/fahad-maqbool/SEOOnt">SEO Ontology Project</a>
+                         Visit my Profiles:
+                         <a href="https://github.com/Maria-Farooq534">GitHub</a>
+                         <a href = "http://www.linkedin.com/in/maria-farooq-b693b7288">LinkedIn</a>
+                         <a href = "https://www.behance.net/mariafarooq5">Behance</a>
+                         <a href = "https://github.com/fahad-maqbool/SEOOnt">SEO Ontology Project</a>
                         
                         <h5><a href = "http://127.0.0.1:8000/">Back To Home</a></h5> 
-#                         """)
+                         """)
 
 def contact(request):
     return HttpResponse("""Conntact Us                        
